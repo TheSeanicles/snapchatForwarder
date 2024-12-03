@@ -7,7 +7,8 @@ if __name__ == '__main__':
     s = forwardServer.server
     s.run()
     def f():
-        subprocess.call(['sh', 'xdotool search "Mozilla Firefox" windowactivate --sync key --clearmodifiers ctrl+l'])
+        run1 = ['xdotool', 'search', '"Mozilla Firefox"', 'windowactivate', '--sync', 'key', '--clearmodifiers', 'ctrl+l']
+        subprocess.call(run1)
     p = Process(target=f)
     p.start()
     time.sleep(5)
