@@ -1,2 +1,2 @@
 #!/bin/bash
-xdotool mousemove 10 790
+xdotool mousemove 20 780
