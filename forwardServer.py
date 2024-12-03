@@ -13,9 +13,13 @@ class server:
 
     def scratch():
         run1 = 'xdotool type "neofetch"; xdotool key KP_Enter'
+        run1 = ('xdotool', 'type "neofetch"')
+        run2 = ('xdotool', 'key KP_Enter')
         subprocess.run(run1, check=True, stdout=subprocess.PIPE).stdout
         print(run1.stdout)
-        print("DID IT RUN?")
+        
+        subprocess.run(run2, check=True, stdout=subprocess.PIPE).stdout
+        print(run2.stdout)
 
 if __name__ == '__main__':
     pass
