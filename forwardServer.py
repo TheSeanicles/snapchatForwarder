@@ -11,7 +11,7 @@ class server:
             for filename in sct.save():
                 print(filename)
                 reader = easyocr.Reader(['en'])
-                result = reader.readtext('filename')
+                result = reader.readtext(filename)
                 print(result)
 
 
