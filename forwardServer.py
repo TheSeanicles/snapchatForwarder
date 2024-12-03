@@ -1,6 +1,7 @@
 # https://selenium-python.readthedocs.io/installation.html#installing-python-bindings-for-selenium
 import subprocess
 import flask
+import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -13,6 +14,7 @@ elem.clear()
 elem.send_keys("pycon")
 elem.send_keys(Keys.RETURN)
 assert "No results found." not in driver.page_source
+time.sleep(5)
 driver.close()
 
 class server:
