@@ -9,6 +9,6 @@ xdotool key KP_Enter;
 sleep 2;
 xdotool key Ctrl+l;
 sleep 0.2;
-xdotool type "snapchat.com";
+xdotool type "web.snapchat.com";
 sleep 0.2;
 xdotool key KP_Enter;
