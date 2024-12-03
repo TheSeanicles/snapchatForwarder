@@ -2,20 +2,7 @@
 import subprocess
 import flask
 import time
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-
-driver = webdriver.Chrome()
-driver.get("http://www.python.org")
-assert "Python" in driver.title
-elem = driver.find_element(By.NAME, "q")
-elem.clear()
-elem.send_keys("pycon")
-elem.send_keys(Keys.RETURN)
-assert "No results found." not in driver.page_source
-time.sleep(5)
-driver.close()
+import os
 
 class server:
     def init():
@@ -28,8 +15,10 @@ class server:
         pass
 
     def scratch():
-        run1 = ['xdotool', 'search', '"Mozilla Firefox"', 'windowactivate', '--sync', 'key', '--clearmodifiers', 'ctrl+l']
-        subprocess.run(run1)
+        # run1 = ['xdotool', 'search', '"Mozilla Firefox"', 'windowactivate', '--sync', 'key', '--clearmodifiers', 'ctrl+l']
+        # subprocess.run(run1)
+        xdoCall = 'xdotool search "Mozilla Firefox" windowactivate --sync key --clearmodifiers ctrl+l'
+        os.system(xdoCall)
 
 if __name__ == '__main__':
     pass
