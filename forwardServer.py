@@ -1,6 +1,5 @@
 # https://selenium-python.readthedocs.io/installation.html#installing-python-bindings-for-selenium
 import subprocess
-import flask
 import time
 import os
 
@@ -15,7 +14,7 @@ class server:
         pass
 
     def scratch():
-        subprocess.call(['sh', './script.sh'])
+        subprocess.call(['sh', './xdotoolScripts/script.sh'])
 
 if __name__ == '__main__':
     pass
