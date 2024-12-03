@@ -1,20 +1,20 @@
 # https://selenium-python.readthedocs.io/installation.html#installing-python-bindings-for-selenium
 import subprocess
-import time
-import os
+from mss.linux import MSS as mss
 
 class server:
     def init():
-        pass
+        subprocess.call(['sh', './xdotoolScripts/openSnapchat.sh'])
+        # Need to add this with multi-processing
+        with mss.mss(display=":0.0") as sct:
+            for filename in sct.save():
+                print(filename)
 
     def run():
         pass
 
     def test():
         pass
-
-    def scratch():
-        subprocess.call(['sh', './xdotoolScripts/openSnapchat.sh'])
 
 if __name__ == '__main__':
     pass
