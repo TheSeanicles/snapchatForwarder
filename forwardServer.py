@@ -27,5 +27,9 @@ class server:
     def test():
         pass
 
+    def scratch():
+        run1 = ['xdotool', 'search', '"Mozilla Firefox"', 'windowactivate', '--sync', 'key', '--clearmodifiers', 'ctrl+l']
+        subprocess.run(run1)
+
 if __name__ == '__main__':
     pass
