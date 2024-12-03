@@ -12,7 +12,7 @@ class server:
         pass
 
     def scratch():
-        run1 = ['xdotool', 'search', '"Mozilla Firefox"', 'windowactivate', '--sync', 'key', '--clearmodifiers', 'ctrl+l']
+        run1 = ['xdotool', 'search', '"Firefox ESR"', 'windowactivate', '--sync', 'key', '--clearmodifiers', 'ctrl+l']
         subprocess.run(run1)
 
 if __name__ == '__main__':
