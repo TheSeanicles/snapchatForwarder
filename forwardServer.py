@@ -1,6 +1,6 @@
 # https://selenium-python.readthedocs.io/installation.html#installing-python-bindings-for-selenium
 import subprocess
-from mss.linux import MSS as mss
+from mss import mss
 
 class server:
     def init():
