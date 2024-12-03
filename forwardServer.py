@@ -17,7 +17,7 @@ class server:
     def scratch():
         # run1 = ['xdotool', 'search', '"Mozilla Firefox"', 'windowactivate', '--sync', 'key', '--clearmodifiers', 'ctrl+l']
         # subprocess.run(run1)
-        xdoCall = '/usr/bin/bash -c "xdotool search "Mozilla Firefox" windowactivate --sync key --clearmodifiers ctrl+l"'
+        xdoCall = '/usr/bin/bash -c "xdotool mousemove 200 400"'
         os.system(xdoCall)
 
 if __name__ == '__main__':
