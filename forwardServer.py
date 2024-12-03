@@ -1,3 +1,4 @@
+# https://selenium-python.readthedocs.io/installation.html#installing-python-bindings-for-selenium
 import subprocess
 import flask
 
@@ -10,10 +11,6 @@ class server:
 
     def test():
         pass
-
-    def scratch():
-        run1 = ['xdotool', 'search', '"Firefox ESR"', 'windowactivate', '--sync', 'key', '--clearmodifiers', 'ctrl+l']
-        subprocess.run(run1)
 
 if __name__ == '__main__':
     pass
