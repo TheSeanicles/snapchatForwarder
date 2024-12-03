@@ -12,7 +12,7 @@ class server:
         pass
 
     def scratch():
-        run1 = 'xdotool key Super+1'        
+        run1 = ('xdotool', 'key Super+1')
         subprocess.run(run1, check=True, stdout=subprocess.PIPE, executable="/bin/bash").stdout
         print(run1.stdout)
 
