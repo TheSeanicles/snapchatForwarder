@@ -5,5 +5,5 @@ if __name__ == '__main__':
     s = forwardServer.server
     s.run()
     s.scratch()
-    time.time.sleep(5)
+    time.sleep(5)
     # input("Press return to close the program")
