@@ -14,7 +14,7 @@ class server:
         pass
 
     def scratch():
-        subprocess.call(['sh', './xdotoolScripts/applicationLauncher.sh'])
+        subprocess.call(['sh', './xdotoolScripts/openSnapchat.sh'])
 
 if __name__ == '__main__':
     pass
