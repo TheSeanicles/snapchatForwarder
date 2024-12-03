@@ -1,2 +1,2 @@
 #!/bin/bash
-xdotool movemouse 0 0
+xdotool mousemove 0 0
