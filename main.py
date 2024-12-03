@@ -1,4 +1,3 @@
-import time
 import forwardServer
 
 if __name__ == '__main__':
